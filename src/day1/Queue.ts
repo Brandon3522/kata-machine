@@ -15,7 +15,7 @@ export default class Queue<T> {
 
     enqueue(item: T): void {
 			const node = {value: item} as Node<T>; // Create node
-			this.length ++;
+			this.length++;
 
 			if(!this.tail) {
 				this.tail = this.head = node;
