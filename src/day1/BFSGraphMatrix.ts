@@ -21,7 +21,7 @@ export default function bfs(graph: WeightedAdjacencyMatrix, source: number, need
 		}
 
 		const adjs = graph[curr];
-		for (let i = 0; i < graph.length; i++) {
+		for (let i = 0; i < adjs.length; i++) {
 			 if(adjs[i] === 0) {
 				continue;
 			 }
